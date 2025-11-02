@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Proyecto Data Analytics: Medallas Olímpicas con Tableau</title>
+    <style>
+        .project-section {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 30px 15px;
+        }
+        h1 {
+            color: #17408b; /* Azul corporativo */
+            border-bottom: 3px solid #f0ad4e; /* Línea de acento */
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 35px;
+            border-left: 5px solid #4a77b8;
+            padding-left: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .dashboard-img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .skills-table {
+            width: 100%;
+            margin: 25px 0;
+            border-collapse: collapse;
+        }
+        .skills-table th, .skills-table td {
+            border: 1px solid #ecf0f1;
+            padding: 12px;
+            text-align: left;
+        }
+        .skills-table th {
+            background-color: #e8f0fe;
+            color: #17408b;
+        }
+        .insights-list, .architecture-list {
+            padding-left: 20px;
+        }
+        .insights-list {
+            list-style-type: '💡 ';
+        }
+        .architecture-list {
+            list-style-type: '➡️ ';
+        }
+        .insights-list li, .architecture-list li {
+            margin-bottom: 15px;
+        }
+        .tool-badge {
+            display: inline-block;
+            background-color: #4a77b8;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin-right: 10px;
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="project-section">
+
+    <h1>Proyecto de Data Analytics: Rendimiento Histórico en los Juegos Olímpicos</h1>
+
+    <div class="image-container">
+        <img src="image_07f5ab.png" alt="Dashboard de Análisis de Medallas Olímpicas por Continente y País en Tableau" class="dashboard-img">
+        <p style="margin-top: 10px; font-style: italic; color: #7f8c8d;">Dashboard interactivo desarrollado en <strong>Tableau Desktop</strong>, con una arquitectura de cuatro páginas para un análisis exhaustivo.</p>
+    </div>
+    
+    <h2>Resumen Ejecutivo y Arquitectura del Dashboard</h2>
+    <p>
+        Este proyecto se enfocó en el análisis del rendimiento de las delegaciones en los Juegos Olímpicos. El objetivo principal fue transformar datos brutos en <strong>métricas accionables y visualizaciones informativas</strong>, diseñando una solución de Business Intelligence con una **arquitectura de cuatro niveles de detalle** para cubrir el panorama global, geográfico y de rendimiento específico por país.
+    </p>
+    <p>
+        <strong>Arquitectura de la Solución (4 Pestañas Interactivas):</strong>
+        <ul class="architecture-list">
+            <li><strong>Página 1 (General - Resumen Ejecutivo):</strong> Proporciona una visión de alto nivel del total de medallas (Oro, Plata, Bronce) y el rendimiento agregado por continente.</li>
+            <li><strong>Página 2 (Geográfica - Mapa):</strong> Utiliza un **mapa interactivo** de Tableau para desglosar visualmente el rendimiento de medallas y el total por cada país.</li>
+            <li><strong>Página 3 (Distribución):</strong> Presenta un resumen por región, enfocándose en la distribución proporcional de la cantidad de medallas ganadas por tipo (Oro vs. Plata vs. Bronce), permitiendo un análisis de eficiencia.</li>
+            <li><strong>Página 4 (Detalle por Tipo):</strong> Ofrece un resumen granular de la información por continente y país, facilitando una inspección detallada por el tipo de medalla.</li>
+        </ul>
+    </p>
+    <p>
+        <strong>Mi Rol:</strong> Analista de Datos y Arquitecto de BI. Fui responsable de la estructura de la información, el modelado en Tableau y la aplicación de una **metodología de navegación** que guía al usuario desde la visión general hasta el detalle granular.
+    </p>
+
+    <h2>Habilidades Técnicas Demostradas</h2>
+    <p>La creación de este *dashboard* de cuatro niveles pone de manifiesto mi dominio en las siguientes áreas, cruciales para soluciones de BI complejas:</p>
+    
+    <div style="margin-bottom: 20px;">
+        <span class="tool-badge">Tableau Desktop</span>
+        <span class="tool-badge">Diseño de UX/UI en BI</span>
+        <span class="tool-badge">Mapas y Análisis Geospatial</span>
+        <span class="tool-badge">Cálculos LOD/Cálculos de Tabla</span>
+        <span class="tool-badge">Narrativa Multi-Nivel</span>
+    </div>
+
+    <table class="skills-table">
+        <thead>
+            <tr>
+                <th>Fase del Proyecto</th>
+                <th>Técnica/Herramienta Aplicada</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Modelado y Estructura</strong></td>
+                <td>Diseño de un modelo de datos robusto en Tableau para soportar la navegación fluida a través de las cuatro pestañas sin latencia.</td>
+            </tr>
+            <tr>
+                <td><strong>Análisis Geográfico</strong></td>
+                <td>Uso de la funcionalidad de **Mapas** de Tableau (Página 2) para geocodificar y visualizar el rendimiento, demostrando competencia en **Análisis Geospatial**.</td>
+            </tr>
+            <tr>
+                <td><strong>Cálculos y Parámetros</strong></td>
+                <td>Implementación de **Cálculos de Tabla** y fórmulas complejas para obtener métricas de *ranking* (Top 15) y ratios de distribución de medallas por tipo.</td>
+            </tr>
+            <tr>
+                <td><strong>Diseño y Experiencia de Usuario (UX)</strong></td>
+                <td>Desarrollo de una **Experiencia de Usuario (UX) intuitiva** donde cada pestaña sirve como un nivel progresivo de *drill-down* analítico.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Insights Clave del Análisis</h2>
+    <p>El *dashboard* permitió extraer conclusiones claras, fundamentales para cualquier federación deportiva o analista de tendencias globales:</p>
+    <ul class="insights-list">
+        <li>
+            <strong>Dominio Continental:</strong> Europa y Asia muestran una superioridad significativa en el volumen total de medallas, lo que se refleja claramente en el **Treemap**.
+        </li>
+        <li>
+            <strong>Concentración de Liderazgo:</strong> El gráfico **Top 15 medallas por países** confirma que la mayoría del medallero está fuertemente concentrada en pocos países (ej. Estados Unidos, China), indicando una alta correlación entre inversión y rendimiento.
+        </li>
+        <li>
+            <strong>Análisis Geográfico Detallado:</strong> La página de **Mapa interactivo** permite aislar rápidamente regiones específicas y entender la distribución de medallas en el contexto geográfico (Página 2).
+        </li>
+        <li>
+            <strong>Efectividad y Distribución:</strong> Las páginas de **Distribución** y **Detalle** permiten una auditoría granular del éxito, identificando la proporción de Oros obtenidos por cada región (Página 3).
+        </li>
+    </ul>
+
+    <p style="margin-top: 40px; text-align: center; font-style: italic;">
+        Este proyecto demuestra mi capacidad para transformar datos complejos en soluciones de BI multi-nivel, utilizando **Tableau** para guiar al usuario a través de un análisis completo y estratégico.
+    </p>
+
+</div>
+</body>
+</html>

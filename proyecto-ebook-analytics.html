@@ -1,0 +1,156 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[NOMBRE DEL PROYECTO] - Nicole Vasquez Madrid</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="proyecto-style.css"> </head>
+    <style>
+        /* Estilos básicos para la tabla */
+        .data-analytics-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+        .data-analytics-table th, .data-analytics-table td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        .data-analytics-table th {
+            background-color: #343434;
+            color: #ff9900;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .data-analytics-table tr:nth-child(even) {
+            background-color: #1a1a1a;
+        }
+        /* Estilos opcionales para destacar en un portafolio */
+        .data-analytics-table td strong {
+            color: #ff9900 /* Color de énfasis */
+        }
+    </style>
+<body>
+
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html#titulo">Inicio</a></li>
+                <li><a href="index.html#presentacion">Sobre Mí</a></li>
+                <li><a href="index.html#herramientas">Herramientas</a></li>
+                <li><a href="index.html#proyectos">Proyectos</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle"> 
+            <i class="fas fa-bars"></i> 
+        </div>  
+    </header>
+
+    <section 
+    id="detalle-proyecto" class="detalle-proyecto-seccion">
+    
+    <div class="hero-detalle">
+        <h1 class="titulo-proyecto">Ebook DATA ANALYTICS </h1>
+        
+        <div class="meta-data">
+            <span class="herramientas-usadas"><i class="fas fa-tools"></i> R-studio</span>
+            <span class="foco"><i class="fas fa-bullseye"></i> **Foco:** limpieza, Modelado de Datos,EDA, Visualización.</span>
+        </div>
+    </div>
+
+        <div class="contenido-proyecto">
+            
+            <div class="seccion-detalle resumen-ejecutivo">
+                <h2>Introducción y Metodología</h2>
+                <p>Es un libro digital que tiene como objetivo central 
+                    el servir como una guía práctica y accesible para la implementación
+                     de proyectos de investigación y análisis de datos utilizando el lenguaje R.
+                </p>
+            </div>
+
+            <div class="seccion-detalle">
+                <h2> Competencias Clave a Desarrollar</h2>
+                <p> A través de este material, el lector (o potencial empleador) comprenderá el
+                     dominio de un flujo de trabajo integral en Data Analytics con R. </p>
+                     <table class="data-analytics-table">
+                        <thead>
+                            <tr>
+                                <th>Etapa del Proceso</th>
+                                <th>Habilidad Clave y Metodología</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Importación de Datos</strong></td>
+                                <td>Dominio de la lectura de diversas fuentes de datos (CSV, Excel, TXT, bases de datos) en el entorno R.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Limpieza de Datos (Data Cleaning)</strong></td>
+                                <td>Aplicación de técnicas para el manejo de <em>datasets</em> sucios del mundo real, incluyendo la gestión de **valores nulos, atípicos y anomalías**.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Transformación de Datos</strong></td>
+                                <td>Habilidad para modificar y enriquecer los datos (<em>Feature Engineering</em>), creando **variables calculadas** y consolidando <em>dataframes</em> (uso de **<code>dplyr</code>**).</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Análisis Exploratorio y Visualización (EDA)</strong></td>
+                                <td>Utilización de estadísticas descriptivas y la librería **<code>ggplot2</code>** para identificar **<em>insights</em> relevantes**, patrones de negocio y validar hipótesis iniciales.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Modelamiento Predictivo</strong></td>
+                                <td>Implementación de técnicas de **Aprendizaje Supervisado y No Supervisado** para la **generalización y predicción** de eventos futuros.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <div class="visualizacion-incrustada">
+                    
+                </div>
+            </div>
+
+            <div class="seccion-detalle">
+                <h2>1.2 Estructura del Contenido Técnico</h2>
+                <p class="competencias-text">
+                    El contenido está organizado de forma progresiva, partiendo de los fundamentos de programación para construir sobre ellos las habilidades analíticas avanzadas:
+                </p>
+            
+                <ul class="chapters-list">
+                    <li><strong>Capítulo 1: Fundamentos:</strong> Conceptos esenciales de R y de Programación.</li>
+                    <li><strong>Capítulo 2: Tipos y Estructuras:</strong> Manipulación de los tipos de datos y estructuras primarias en R (Vectores, Listas, Dataframes, Tibbles).</li>
+                    <li><strong>Capítulo 3: Data Wrangling:</strong> Uso de las principales librerías (ej. tidyverse) para la manipulación y gestión eficiente de grandes conjuntos de datos.</li>
+                    <li><strong>Capítulo 4: Visualización Avanzada:</strong> Enfoque en ggplot2 y técnicas de EDA para la presentación efectiva de resultados.</li>
+                    <li><strong>Capítulo 5: Machine Learning en R:</strong> Aplicación de algoritmos de clasificación, regresión y clustering.</li>
+                </ul>
+                <div class="enlaces-proyecto">
+                    <a href="https://data-analytics-utem.s3.amazonaws.com/index.html" target="_blank" class="enlace-primario">Ver ebook analytics <i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://github.com/nicoletiarev/bookdownData" target="_blank" class="enlace-secundario">Ver Código SQL/R-proyect <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <a href="index.html#proyectos" class="volver-proyectos"><i class="fas fa-arrow-left"></i> Volver a Proyectos</a>
+        </div>
+
+    </section>
+
+    <section id="contacto" class="contacto-detalle-proyecto">
+        <h3>Contáctame</h3>
+        <p>Si deseas conocer más sobre mi trabajo o colaborar en un proyecto, no dudes en contactarme.</p>
+        <p>
+            <b>Email: </b> <a href="mailto:nicole.tiare.vasquez@gmail.com">nicole.tiare.vasquez@gmail.com</a><br>
+            <b> GitHub:</b> <a href="https://github.com/nicoletiarev" target="_blank">https://github.com/nicoletiarev</a>
+        </p>
+        <p>Descarga mi **currículum** para más detalles: <a href="[URL_DE_TU_CV.pdf]" download>Descargar CV (PDF)</a></p>
+    </section>
+
+    <footer>
+        © 2025 - Desarrollado por Nicole Vasquez Madrid | BI Analyst
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[NOMBRE DEL PROYECTO] - Nicole Vasquez Madrid</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="proyecto-style.css"> </head>
+<body>
+
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html#titulo">Inicio</a></li>
+                <li><a href="index.html#presentacion">Sobre Mí</a></li>
+                <li><a href="index.html#herramientas">Herramientas</a></li>
+                <li><a href="index.html#proyectos">Proyectos</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section 
+    id="detalle-proyecto" class="detalle-proyecto-seccion">
+    
+    <div class="hero-detalle">
+        <h1 class="titulo-proyecto">[NOMBRE DEL PROYECTO: Dashboard de Ventas Regionales]</h1>
+        
+        <div class="meta-data">
+            <span class="herramientas-usadas"><i class="fas fa-tools"></i> **Tecnologías:** Power BI, SQL, Python (Pandas)</span>
+            <span class="foco"><i class="fas fa-bullseye"></i> **Foco:** Business Intelligence, Modelado de Datos, Visualización.</span>
+        </div>
+    </div>
+
+        <div class="contenido-proyecto">
+            
+            <div class="seccion-detalle resumen-ejecutivo">
+                <h2>Resumen y Pregunta de Negocio</h2>
+                <p>El proyecto abordó la necesidad crítica de la gerencia de ventas para tener visibilidad del rendimiento en tiempo real. Se respondió a la pregunta: **"¿Qué combinación de producto y región está generando la mayor pérdida de margen de beneficio?"**</p>
+            </div>
+
+            <div class="seccion-detalle">
+                <h2>1. Proceso y Metodología</h2>
+                <p>Se implementó un ciclo de análisis iterativo. El proceso de **ETL** (Extracción, Transformación, Carga) se realizó mediante scripts SQL para depurar y optimizar datos provenientes de múltiples fuentes, garantizando la integridad de los datos en el modelo Estrella.</p>
+                <div class="visualizacion-incrustada">
+                    
+                    <p class="caption">Diagrama del Modelo de Datos optimizado en Power BI.</p>
+                </div>
+            </div>
+
+            <div class="seccion-detalle">
+                <h2>2. Hallazgos Clave y Recomendaciones</h2>
+                <ul>
+                    <li>**Hallazgo #1 (Impacto en Margen):** El 60% de las ventas en el segmento C generaron solo el 15% del margen total.</li>
+                    <li>**Recomendación:** Se propuso reducir la fuerza de ventas dedicada al segmento C y reenfocar recursos al segmento A, con un potencial de crecimiento del margen del 20%.</li>
+                </ul>
+                <div class="enlaces-proyecto">
+                    <a href="[URL_DEL_DASHBOARD]" target="_blank" class="enlace-primario">Ver Dashboard Interactivo <i class="fas fa-external-link-alt"></i></a>
+                    <a href="[URL_DE_GITHUB]" target="_blank" class="enlace-secundario">Ver Código SQL/Python <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <a href="index.html#proyectos" class="volver-proyectos"><i class="fas fa-arrow-left"></i> Volver a Proyectos</a>
+        </div>
+
+    </section>
+
+    <section id="contacto" class="contacto-detalle-proyecto">
+        <h3>Contáctame</h3>
+        <p>Si deseas conocer más sobre mi trabajo o colaborar en un proyecto, no dudes en contactarme.</p>
+        <p>
+            <b>Email: </b> <a href="mailto:nicole.tiare.vasquez@gmail.com">nicole.tiare.vasquez@gmail.com</a><br>
+            <b> GitHub:</b> <a href="https://github.com/nicoletiarev" target="_blank">https://github.com/nicoletiarev</a>
+        </p>
+        <p>Descarga mi **currículum** para más detalles: <a href="[URL_DE_TU_CV.pdf]" download>Descargar CV (PDF)</a></p>
+    </section>
+
+    <footer>
+        © 2025 - Desarrollado por Nicole Vasquez Madrid | BI Analyst
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
