@@ -86,17 +86,22 @@ HTML
     </style>
     <body>
 
-    <header class="main-header">
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html#titulo">Inicio</a></li>
-                <li><a href="index.html#presentacion">Sobre Mí</a></li>
-                <li><a href="index.html#herramientas">Herramientas</a></li>
-                <li><a href="index.html#proyectos">Proyectos</a></li>
-                <li><a href="index.html#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+        <header class="main-header" id="mainHeader">
+    
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i> 
+            </div>
+        
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#titulo">Inicio</a></li>
+                    <li><a href="index.html#presentacion">Sobre Mí</a></li>
+                    <li><a href="index.html#herramientas">Herramientas</a></li>
+                    <li><a href="index.html#proyectos">Proyectos</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
 
     <section 
     id="detalle-proyecto" class="detalle-proyecto-seccion">
@@ -108,9 +113,9 @@ HTML
         
         <div class="meta-data">
             <span class="herramientas-usadas"><i class="fas fa-tools"></i> Tecnologías: creación de los cálculos, la preparación de datos
-                 y el diseño final del dashboard utilizando Tableau Desktop y Tableau Public/Server.
+                 y el diseño final del dashboard utilizando Tableau Desktop y Tableau Public.
             </p>
-            <span class="foco"><i class="fas fa-bullseye"></i> **Foco:** Business Intelligence, Modelado de Datos, Visualización.</span>
+            <span class="foco"><i class="fas fa-bullseye"></i> Foco: Business Intelligence, Modelado de Datos, Visualización.</span>
         </div>
     </div>
 
@@ -121,27 +126,29 @@ HTML
                 <p>
                     Este proyecto se enfocó en el análisis del rendimiento de las delegaciones en los Juegos Olímpicos.
                      El objetivo principal fue transformar datos brutos en <strong>métricas accionables y visualizaciones
-                         informativas</strong>, diseñando una solución de Business Intelligence con una **arquitectura de 
-                         cuatro niveles de detalle** para cubrir el panorama global, geográfico y de rendimiento específico
+                         informativas</strong>, diseñando una solución de Business Intelligence con una arquitectura de 
+                         cuatro niveles de detalle para cubrir el panorama global, geográfico y de rendimiento específico
                           por país.
                 </p>
                 <p>
                     <strong>Arquitectura de la Solución (4 Pestañas Interactivas):</strong>
                     <ul class="architecture-list">
-                        <li><strong>Página 1 (General - Resumen Ejecutivo):</strong> Proporciona una visión de alto nivel del total de medallas (Oro, Plata, Bronce) y el rendimiento agregado por continente.</li>
-                        <li><strong>Página 2 (Geográfica - Mapa):</strong> Utiliza un **mapa interactivo** de Tableau para desglosar visualmente el rendimiento de medallas y el total por cada país.</li>
-                        <li><strong>Página 3 (Distribución):</strong> Presenta un resumen por región, enfocándose en la distribución proporcional de la cantidad de medallas ganadas por tipo (Oro vs. Plata vs. Bronce), permitiendo un análisis de eficiencia.</li>
-                        <li><strong>Página 4 (Detalle por Tipo):</strong> Ofrece un resumen granular de la información por continente y país, facilitando una inspección detallada por el tipo de medalla.</li>
+                        <li><strong>Página 1 (General - Resumen Ejecutivo):</strong> Proporciona una visión general  
+                             del total de medallas (Oro, Plata, Bronce) y un top del cantidad de medallas por paises .</li>
+                        <li><strong>Página 2 (Geográfica - Mapa):</strong> Utiliza un mapa interactivo 
+                            para desglosar visualmente el rendimiento de medallas y el total por cada país.</li>
+                        <li><strong>Página 3 (Distribución):</strong> Presenta un resumen por región, 
+                            enfocándose en la distribución proporcional de la cantidad de medallas
+                             ganadas por tipo (Oro vs. Plata vs. Bronce), permitiendo un análisis de eficiencia.</li>
+                        <li><strong>Página 4 (Detalle por Tipo):</strong> Ofrece un resumen granular de la información por continente y país,
+                             facilitando una inspección detallada por el tipo de medalla (drill through).</li>
                     </ul>
-                </p>
-                <p>
-                    <strong>Mi Rol:</strong> Analista de Datos y Arquitecto de BI. Fui responsable de la estructura de la información, el modelado en Tableau y la aplicación de una **metodología de navegación** que guía al usuario desde la visión general hasta el detalle granular.
                 </p>
             </div>
 
             <div class="seccion-detalle">
                 <h2>1. Habilidades Técnicas Demostradas</h2>
-                <p>La creación de este *dashboard* de cuatro niveles pone de manifiesto mi dominio en las siguientes áreas, cruciales para soluciones de BI complejas:</p>
+                <p>En la creación de este dashboard de cuatro niveles se puede observar dominio en las siguientes áreas, cruciales para soluciones de BI complejas:</p>
     
                 <div style="margin-bottom: 20px;">
                     <span class="tool-badge">Tableau Desktop</span>
@@ -165,15 +172,15 @@ HTML
                         </tr>
                         <tr>
                             <td><strong>Análisis Geográfico</strong></td>
-                            <td>Uso de la funcionalidad de **Mapas** de Tableau (Página 2) para geocodificar y visualizar el rendimiento, demostrando competencia en **Análisis Geospatial**.</td>
+                            <td>Uso de la funcionalidad de Mapas de Tableau (Página 2) para geocodificar y visualizar el rendimiento, demostrando competencia en Análisis Geospatial.</td>
                         </tr>
                         <tr>
                             <td><strong>Cálculos y Parámetros</strong></td>
-                            <td>Implementación de **Cálculos de Tabla** y fórmulas complejas para obtener métricas de *ranking* (Top 15) y ratios de distribución de medallas por tipo.</td>
+                            <td>Implementación de Cálculos de Tabla y fórmulas complejas para obtener métricas de ranking (Top 15) y ratios de distribución de medallas por tipo.</td>
                         </tr>
                         <tr>
                             <td><strong>Diseño y Experiencia de Usuario (UX)</strong></td>
-                            <td>Desarrollo de una **Experiencia de Usuario (UX) intuitiva** donde cada pestaña sirve como un nivel progresivo de *drill-down* analítico.</td>
+                            <td>Desarrollo de una Experiencia de Usuario (UX) intuitiva donde cada pestaña sirve como un nivel progresivo de drill-down analítico.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -181,26 +188,34 @@ HTML
 
             <div class="seccion-detalle">
                 <h2>Insights Clave del Análisis</h2>
-                <p>El *dashboard* permitió extraer conclusiones claras, fundamentales para cualquier federación deportiva o analista de tendencias globales:</p>
+                <p>El dashboard permitió extraer conclusiones claras, fundamentales para cualquier federación deportiva o analista de tendencias globales:</p>
                 <ul class="insights-list">
                     <li>
-                        <strong>Dominio Continental:</strong> Europa y Asia muestran una superioridad significativa en el volumen total de medallas, lo que se refleja claramente en el **Treemap**.
+                        <strong>Dominio Continental:</strong> Europa y Asia muestran una 
+                        superioridad significativa en el volumen total de medallas, lo
+                         que se refleja claramente en el Treemap.
                     </li>
                     <li>
-                        <strong>Concentración de Liderazgo:</strong> El gráfico **Top 15 medallas por países** confirma que la mayoría del medallero está fuertemente concentrada en pocos países (ej. Estados Unidos, China), indicando una alta correlación entre inversión y rendimiento.
+                        <strong>Concentración de Liderazgo:</strong> El gráfico Top 15 
+                        medallas por países confirma que la mayoría del medallero está 
+                        fuertemente concentrada en pocos países (ej. Estados Unidos, China),
+                         
                     </li>
                     <li>
-                        <strong>Análisis Geográfico Detallado:</strong> La página de **Mapa interactivo** permite aislar rápidamente regiones específicas y entender la distribución de medallas en el contexto geográfico (Página 2).
+                        <strong>Análisis Geográfico Detallado:</strong> La página de Mapa 
+                        interactivo permite aislar rápidamente regiones específicas y entender
+                         la distribución de medallas en el contexto geográfico (Página 2).
                     </li>
                     <li>
-                        <strong>Efectividad y Distribución:</strong> Las páginas de **Distribución** y **Detalle** permiten una auditoría granular del éxito, identificando la proporción de Oros obtenidos por cada región (Página 3).
+                        <strong>Efectividad y Distribución:</strong> Las páginas de Distribución
+                         y Detalle permiten una auditoría granular del éxito, identificando 
+                         la proporción de Oros obtenidos por cada región.
                     </li>
                 </ul>
             
 
                 <div class="enlaces-proyecto">
                     <a href="dashboardtableau.html" target="_blank" class="enlace-primario">Ver Dashboard Interactivo <i class="fas fa-external-link-alt"></i></a>
-                    <a href="[URL_DE_GITHUB]" target="_blank" class="enlace-secundario">Ver Código SQL/Python <i class="fab fa-github"></i></a>
                 </div>
             </div>
             <a href="index.html#proyectos" class="volver-proyectos"><i class="fas fa-arrow-left"></i> Volver a Proyectos</a>
@@ -213,9 +228,10 @@ HTML
         <p>Si deseas conocer más sobre mi trabajo o colaborar en un proyecto, no dudes en contactarme.</p>
         <p>
             <b>Email: </b> <a href="mailto:nicole.tiare.vasquez@gmail.com">nicole.tiare.vasquez@gmail.com</a><br>
-            <b> GitHub:</b> <a href="https://github.com/nicoletiarev" target="_blank">https://github.com/nicoletiarev</a>
+            <b> GitHub:</b> <a href="https://github.com/nicoletiarev" target="_blank">https://github.com/nicoletiarev</a><br>
+            <b> Curriculum :</b>  <a href="https://drive.google.com/file/d/1dteOwrAqMcTnNgKdgBJQrS5XgsZFY7TU/view?usp=drive_link" target="_blank">Revisar CV</a>
         </p>
-        <p>Descarga mi **currículum** para más detalles: <a href="[URL_DE_TU_CV.pdf]" download>Descargar CV (PDF)</a></p>
+
     </section>
 
     <footer>

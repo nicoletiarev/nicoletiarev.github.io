@@ -10,60 +10,231 @@ HTML
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="proyecto-style.css"> </head>
 <body>
+    <style>
+        .project-section {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 30px 15px;
+        }
+        h1 {
+            color: #17408b; /* Azul corporativo */
+            border-bottom: 3px solid #f0ad4e; /* Línea de acento */
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 35px;
+            border-left: 5px solid #4a77b8;
+            padding-left: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .dashboard-img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .skills-table {
+            width: 100%;
+            margin: 25px 0;
+            border-collapse: collapse;
+        }
+        .skills-table th, .skills-table td {
+            border: 1px solid #ecf0f1;
+            padding: 12px;
+            text-align: left;
+        }
+        .skills-table th {
+            background-color: #e8f0fe;
+            color: #17408b;
+        }
+        .insights-list, .architecture-list {
+            padding-left: 20px;
+        }
+        .insights-list {
+            list-style-type: '💡 ';
+        }
+        .architecture-list {
+            list-style-type: '➡️ ';
+        }
+        .insights-list li, .architecture-list li {
+            margin-bottom: 15px;
+        }
+        .tool-badge {
+            display: inline-block;
+            background-color: #4a77b8;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin-right: 10px;
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+    </style>
+ <header class="main-header" id="mainHeader">
+    
+    <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i> 
+    </div>
 
-    <header class="main-header">
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html#titulo">Inicio</a></li>
-                <li><a href="index.html#presentacion">Sobre Mí</a></li>
-                <li><a href="index.html#herramientas">Herramientas</a></li>
-                <li><a href="index.html#proyectos">Proyectos</a></li>
-                <li><a href="index.html#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html#titulo">Inicio</a></li>
+            <li><a href="index.html#presentacion">Sobre Mí</a></li>
+            <li><a href="index.html#herramientas">Herramientas</a></li>
+            <li><a href="index.html#proyectos">Proyectos</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
 
     <section 
     id="detalle-proyecto" class="detalle-proyecto-seccion">
     
     <div class="hero-detalle">
-        <h1 class="titulo-proyecto">[NOMBRE DEL PROYECTO: Dashboard de Ventas Regionales]</h1>
+        <h1 class="titulo-proyecto">Proyecto de Business Intelligence: Análisis de Ventas Globales en SAP con Power BI</h1>
         
         <div class="meta-data">
-            <span class="herramientas-usadas"><i class="fas fa-tools"></i> **Tecnologías:** Power BI, SQL, Python (Pandas)</span>
-            <span class="foco"><i class="fas fa-bullseye"></i> **Foco:** Business Intelligence, Modelado de Datos, Visualización.</span>
+            <span class="herramientas-usadas"><i class="fas fa-tools"></i> Tecnologías: Power BI, Modelado DAX, Power Query. </span>
+            <span class="foco"><i class="fas fa-bullseye"></i> Foco: Business Intelligence, Modelado de Datos, Visualización.</span>
         </div>
     </div>
 
-        <div class="contenido-proyecto">
-            
-            <div class="seccion-detalle resumen-ejecutivo">
-                <h2>Resumen y Pregunta de Negocio</h2>
-                <p>El proyecto abordó la necesidad crítica de la gerencia de ventas para tener visibilidad del rendimiento en tiempo real. Se respondió a la pregunta: **"¿Qué combinación de producto y región está generando la mayor pérdida de margen de beneficio?"**</p>
+    <div class="seccion-detalle"> <h2> Contexto de Datos: SAP Bikes </h2>
+            <p>
+                Este dashboard interactivo se desarrolló utilizando datos de muestra SAP Bikes,
+                 Este contexto demuestra la capacidad de trabajar con estructuras de datos complejas
+                  (datos maestros, precios y transacciones),
+                 típicas de un sistema ERP (como SAP), para simular análisis de datos y Business Intelligence.
+            </p>
+            <p>
+                El objetivo principal fue transformar los datos ficticios de pedidos de venta, 
+                productos y vendedores en una solución de Power BI para el monitoreo de KPIs clave,
+                 como la estacionalidad, el rendimiento geográfico y la contribución de
+                  ingresos por producto y distribuidor.
+            </p>
+
+    <ul style="list-style-type: square; padding-left: 20px;">
+        <li>Manejar Datos Transaccionales (pedidos de venta) y Datos Maestros (productos, precios, vendedores).</li>
+        <li>Modelar relaciones de datos complejos, similares a un entorno ERP real (Enterprise Resource Planning).</li>
+    </ul>
+
+    <h2>Arquitectura de la Solución (5 Pestañas Interactivas con Navegación Avanzada)</h2>
+    <p>
+        La solución fue diseñada con una arquitectura de cuatro niveles en Power BI para facilitar 
+        un análisis drill-down completo, desde la visión ejecutiva hasta el detalle geográfico.
+    </p>
+    
+    <p>
+        <strong>Arquitectura de la Solución (5 Pestañas Interactivas con Navegación Avanzada):</strong>
+        <ul class="architecture-list">
+            <li><strong>Página Home (Resumen Ejecutivo):</strong> Visión de los KPIs principales (Ventas Netas, Tax Total, Ventas Brutas) y tendencias históricas, con un mapa global de contribución.</li>
+            <li><strong>Página Ventas:</strong> Detalle de ventas por producto principal y distribución de ingresos para evaluar la estacionalidad y el impacto geográfico.</li>
+            <li><strong>Página Producto:</strong> Análisis jerárquico por Categoría (EB, RC, MB) e identificación de los Top 10 productos más vendidos por ID.</li>
+            <li><strong>Página Países (Geográfica):</strong> Filtros avanzados y mapas para desglosar las ventas por País y Ciudad, crucial para la logística.</li>
+            <li><strong>Página Socios (Distribución):</strong> Rendimiento de los diferentes distribuidores/regiones (AMER, EMEA, APJ) y ventas por categoría.</li>
+        </ul>
+    </p>
+    </div>
+    <div class="seccion-detalle"> <h2>Habilidades Técnicas Demostradas</h2>
+             <p>Este proyecto exhibe un dominio avanzado de las herramientas y técnicas de Power BI:</p>
+    
+             <div style="margin-bottom: 20px;">
+                <span class="tool-badge">Power BI Desktop</span>
+                <span class="tool-badge">Modelado de Datos (Esquema Estrella/Copo de Nieve)</span>
+                <span class="tool-badge">Manejo de Datos Maestros y Transaccionales (SAP)</span>
+                <span class="tool-badge">DAX para Métricas de Tiempo (YTD, YoY)</span>
+                <span class="tool-badge">**UX/UI en BI (Bookmarks, Botones y Capas)**</span> 
+            </div>
+
+   <table class="skills-table">
+                    <thead>
+                        <tr>
+                            <th>Fase del Proyecto</th>
+                            <th>Técnica/Herramienta Aplicada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Preparación de Datos (ETL)</strong></td>
+                            <td>Uso de **Power Query** para limpieza, unión y transformación de datos maestros y transaccionales, simulando la integración de un ERP.</td>
+                        </tr>
+                        <tr>
+                            <td>**Diseño Interactivo (UX/UI)**</td>
+                            <td>Implementación de **Marcadores (Bookmarks)** y **Botones de Navegación** ocultos para crear una experiencia de navegación fluida entre las 5 pestañas sin depender de las pestañas nativas del informe.</td>
+                        </tr>
+                        <tr>
+                            <td>**Métricas de Negocio**</td>
+                            <td>Implementación de fórmulas **DAX** para calcular KPIs esenciales de Ventas y Financieros como **Ganancia Total** y **Margen de Ganancia**, métricas críticas en el análisis de SAP.</td>
+                        </tr>
+                        <tr>
+                            <td>**Modelado y Estructura**</td>
+                            <td>Diseño de un modelo relacional eficiente que soporta el *drill-down* y el análisis cruzado entre el rendimiento de las ventas y la geografía.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="seccion-detalle image-container">
+                <h2>Vista de Ejemplo del Dashboard</h2>
+                <img src="https://github.com/nicoletiarev/nicoletiarev/assets/74216289/76f71223-ecb1-43ef-96f4-27c6031e2003" alt="Dashboard de Ventas de Bicicletas SAP Bikes - Vista Home" class="dashboard-img">
+                <figcaption style="font-style: italic; font-size: 0.9em; color: #666; margin-top: 10px;">
+                    Vista principal del dashboard de Power BI mostrando KPIs y tendencias mensuales de ventas con datos de SAP Bikes.
+                </figcaption>
             </div>
 
             <div class="seccion-detalle">
-                <h2>1. Proceso y Metodología</h2>
-                <p>Se implementó un ciclo de análisis iterativo. El proceso de **ETL** (Extracción, Transformación, Carga) se realizó mediante scripts SQL para depurar y optimizar datos provenientes de múltiples fuentes, garantizando la integridad de los datos en el modelo Estrella.</p>
-                <div class="visualizacion-incrustada">
-                    
-                    <p class="caption">Diagrama del Modelo de Datos optimizado en Power BI.</p>
-                </div>
-            </div>
-
-            <div class="seccion-detalle">
-                <h2>2. Hallazgos Clave y Recomendaciones</h2>
-                <ul>
-                    <li>**Hallazgo #1 (Impacto en Margen):** El 60% de las ventas en el segmento C generaron solo el 15% del margen total.</li>
-                    <li>**Recomendación:** Se propuso reducir la fuerza de ventas dedicada al segmento C y reenfocar recursos al segmento A, con un potencial de crecimiento del margen del 20%.</li>
+                <h2>Insights Clave del Análisis</h2>
+                <p>El análisis permitió generar hallazgos valiosos para optimizar la operación y las estrategias de mercado:</p>
+                <ul class="insights-list">
+                    <li>
+                        <strong>Estacionalidad de Ventas:</strong> Se identificó 
+                        claramente que las ventas (Ventas Totales Mensuales) alcanzan su punto máximo en el 
+                      octubre, sugiriendo la mejor época para campañas de marketing
+                         y gestión de inventario.
+                    </li>
+                    <li>
+                        <strong>Liderazgo de Categoría:</strong> La categoría **EB** 
+                        (Bicicletas de Montaña, por ejemplo) es la que genera la mayor proporción de 
+                        Ventas Netas y debe ser priorizada en la estrategia de inventario y promoción.
+                    </li>
+                    <li>
+                        <strong>Foco Geográfico:</strong> El mercado de Alemania y Canadá
+                         muestran consistentemente altos volúmenes de ventas (como se ve en el Treemap por País), 
+                         justificando una inversión continua en esos mercados.
+                    </li>
+                    <li>
+                        <strong>Rendimiento de Distribuidor:</strong> El distribuidor 
+                        **AMER** (América) es el de mayor contribución en ingresos,
+                         pero es necesario comparar su Margen de Ganancia con **EMEA**
+                          y **APJ** para evaluar la verdadera rentabilidad del canal.
+                    </li>
                 </ul>
-                <div class="enlaces-proyecto">
-                    <a href="[URL_DEL_DASHBOARD]" target="_blank" class="enlace-primario">Ver Dashboard Interactivo <i class="fas fa-external-link-alt"></i></a>
-                    <a href="[URL_DE_GITHUB]" target="_blank" class="enlace-secundario">Ver Código SQL/Python <i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <a href="index.html#proyectos" class="volver-proyectos"><i class="fas fa-arrow-left"></i> Volver a Proyectos</a>
-        </div>
+</div>
+    <p style="margin-top: 40px; text-align: center; font-style: italic;">
+        Este proyecto demuestra mi habilidad para diseñar, modelar y presentar soluciones de BI completas en Power BI, utilizando datos empresariales (SAP) para impulsar decisiones estratégicas.
+    </p>
+
+    <div class="enlaces-proyecto">
+        <a href="https://youtu.be/TaZQmyQLVv4" target="_blank" class="enlace-primario">Ver video del dashboard <i class="fas fa-external-link-alt"></i></a>
+        <a href="https://github.com/nicoletiarev/bookdownData" target="_blank" class="enlace-secundario">Descargar el dashboard <i class="fab fa-github"></i></a>
+    </div>
+</div>
+<a href="index.html#proyectos" class="volver-proyectos"><i class="fas fa-arrow-left"></i> Volver a Proyectos</a>
+</div>
 
     </section>
 
@@ -72,9 +243,10 @@ HTML
         <p>Si deseas conocer más sobre mi trabajo o colaborar en un proyecto, no dudes en contactarme.</p>
         <p>
             <b>Email: </b> <a href="mailto:nicole.tiare.vasquez@gmail.com">nicole.tiare.vasquez@gmail.com</a><br>
-            <b> GitHub:</b> <a href="https://github.com/nicoletiarev" target="_blank">https://github.com/nicoletiarev</a>
+            <b> GitHub:</b> <a href="https://github.com/nicoletiarev" target="_blank">https://github.com/nicoletiarev</a><br>
+            <b> Curriculum :</b>  <a href="https://drive.google.com/file/d/1dteOwrAqMcTnNgKdgBJQrS5XgsZFY7TU/view?usp=drive_link" target="_blank">Revisar CV</a>
         </p>
-        <p>Descarga mi **currículum** para más detalles: <a href="[URL_DE_TU_CV.pdf]" download>Descargar CV (PDF)</a></p>
+
     </section>
 
     <footer>
